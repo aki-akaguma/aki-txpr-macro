@@ -14,16 +14,16 @@ repository = "https://github.com/aki-akaguma/aki-txpr-macro"
 default = []
 
 [dependencies]
-runnel = "*"
-anyhow = "*"
+runnel = "0.3"
+anyhow = "1.0"
 
 [dev-dependencies]
-aki-gsub = "*"
-aki-mcolor = "*"
-aki-mcycle = "*"
-aki-mline = "*"
-aki-resort = "*"
-aki-stats = "*"
-aki-unbody = "*"
-aki-xcat = "*"
-aki-xtee = "*"
+aki-gsub = "0.1"
+aki-mcolor = "0.1"
+aki-mcycle = "0.1"
+aki-mline = "0.1"
+aki-resort = "0.1"
+aki-stats = "0.1"
+aki-unbody = "0.1"
+aki-xcat = "0.1"
+aki-xtee = "0.1"
