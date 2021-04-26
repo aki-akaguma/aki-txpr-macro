@@ -1,0 +1,29 @@
+[package]
+name = "aki-txpr-macro"
+version = "0.1.0"
+authors = ["aki <aki.akaguma@hotmail.com>"]
+description = "the more easy to use libaki-*."
+keywords = ["pipe", "fifo", "filter", "threads"]
+categories = ["text-processing"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+edition = "2018"
+repository = "https://github.com/aki-akaguma/aki-txpr-macro"
+
+[features]
+default = []
+
+[dependencies]
+runnel = "*"
+anyhow = "*"
+
+[dev-dependencies]
+aki-gsub = "*"
+aki-mcolor = "*"
+aki-mcycle = "*"
+aki-mline = "*"
+aki-resort = "*"
+aki-stats = "*"
+aki-unbody = "*"
+aki-xcat = "*"
+aki-xtee = "*"
