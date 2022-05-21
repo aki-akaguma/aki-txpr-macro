@@ -41,7 +41,7 @@ fn test_02() -> anyhow::Result<String> {
     let (next_in, handles) = pipe_line! {
         (next_in, handles);
         libaki_xcat  "xcat" "-n" "-f" "fixtures/target-list.txt";
-        libaki_mline "mline" "-e" "gnu";
+        libaki_mline "mline" "-e" "gnu" "--color" "never";
         libaki_stats "stats" "-a" "--locale" "en";
     };
     // main thread
@@ -83,7 +83,7 @@ mod test {
         assert_eq!(r.is_ok(), true);
         assert_eq!(
             r.unwrap(),
-            "lines:\"23\", bytes:\"1,543\", chars:\"1,543\", words:\"81\", max:\"78\"\n"
+            "lines:\"23\", bytes:\"1,290\", chars:\"1,290\", words:\"81\", max:\"67\"\n"
         );
     }
 }

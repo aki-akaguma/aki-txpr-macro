@@ -2,6 +2,11 @@ aki-txpr-macro TBD
 ===
 Unreleased changes. Release notes have not yet been written.
 
+0.1.3 (2022-05-21)
+=====
+
+* bug fix: testtest::test_2
+
 0.1.2 (2022-02-07)
 =====
 

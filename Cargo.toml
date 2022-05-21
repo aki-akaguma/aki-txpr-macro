@@ -1,6 +1,6 @@
 [package]
 name = "aki-txpr-macro"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["aki <aki.akaguma@hotmail.com>"]
 description = "the more easy to use libaki-*."
 keywords = ["pipe", "fifo", "filter", "threads"]
