@@ -6,7 +6,8 @@
 
 - old style rust macro
 - multi-threaded libaki-*
-- minimum support rustc 1.38.0
+- minimum support rustc 1.56.1 (59eed8a2a 2021-11-01)
+
 
 ## Examples
 
