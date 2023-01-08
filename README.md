@@ -1,5 +1,10 @@
 # aki-txpr-macro
 
+[![crate][crate-image]][crate-link]
+[![Docs][docs-image]][docs-link]
+![Rust Version][rustc-image]
+![Apache2/MIT licensed][license-image]
+
 *aki-txpr-macro* is the more easy to use libaki-*.
 
 ## Features
@@ -96,3 +101,27 @@ fn test_02() -> anyhow::Result<String> {
 [aki-unbody]:https://crates.io/crates/aki-unbody
 [aki-xcat]:https://crates.io/crates/aki-xcat
 [aki-xtee]:https://crates.io/crates/aki-xtee
+
+# Changelogs
+
+[This crate's changelog here.](https://github.com/aki-akaguma/aki-txpr-macro/blob/main/CHANGELOG.md)
+
+# License
+
+This project is licensed under either of
+
+ * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
+   https://www.apache.org/licenses/LICENSE-2.0)
+ * MIT license ([LICENSE-MIT](LICENSE-MIT) or
+   https://opensource.org/licenses/MIT)
+
+at your option.
+
+[//]: # (badges)
+
+[crate-image]: https://img.shields.io/crates/v/aki-txpr-macro.svg
+[crate-link]: https://crates.io/crates/aki-txpr-macro
+[docs-image]: https://docs.rs/aki-txpr-macro/badge.svg
+[docs-link]: https://docs.rs/aki-txpr-macro/
+[rustc-image]: https://img.shields.io/badge/rustc-1.56+-blue.svg
+[license-image]: https://img.shields.io/badge/license-Apache2.0/MIT-blue.svg
