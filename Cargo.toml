@@ -1,6 +1,6 @@
 [package]
 name = "aki-txpr-macro"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["aki <aki.akaguma@hotmail.com>"]
 description = "the more easy to use libaki-*."
 keywords = ["pipe", "fifo", "filter", "threads"]
@@ -8,6 +8,7 @@ categories = ["text-processing"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 edition = "2021"
+rust-version = "1.56.0"
 repository = "https://github.com/aki-akaguma/aki-txpr-macro"
 
 [features]
