@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * rust-version = "1.60.0"
 
 ### Fixed
-* clippy: `bool\_assert\_comparison`
+* clippy: `bool\_assert\_comparison`, `uninlined\_format\_args`
 
 
 ## [0.1.5] (2023-01-11)

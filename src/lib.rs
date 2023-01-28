@@ -138,7 +138,7 @@ macro_rules! _pipe_sz {
 
 pub fn write_error(sioe: &RunnelIoe, prog_name: &str, err: anyhow::Error) -> anyhow::Result<()> {
     let mut p_err = sioe.perr().lock();
-    p_err.write_fmt(format_args!("{}: {}\n", prog_name, err))?;
+    p_err.write_fmt(format_args!("{prog_name}: {err}\n"))?;
     p_err.flush()?;
     Ok(())
 }

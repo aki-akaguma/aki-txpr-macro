@@ -19,7 +19,7 @@ fn test_01() -> anyhow::Result<String> {
             let line_s = line?;
             let line_ss = line_s.as_str();
             #[rustfmt::skip]
-            sioe.pout().lock().write_fmt(format_args!("{}\n", line_ss))?;
+            sioe.pout().lock().write_fmt(format_args!("{line_ss}\n"))?;
         }
         #[rustfmt::skip]
         let x = sioe.pout().lock().buffer_str().to_string();
@@ -53,7 +53,7 @@ fn test_02() -> anyhow::Result<String> {
             let line_s = line?;
             let line_ss = line_s.as_str();
             #[rustfmt::skip]
-            sioe.pout().lock().write_fmt(format_args!("{}\n", line_ss))?;
+            sioe.pout().lock().write_fmt(format_args!("{line_ss}\n"))?;
         }
         #[rustfmt::skip]
         let x = sioe.pout().lock().buffer_str().to_string();
