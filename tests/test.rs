@@ -71,7 +71,7 @@ mod test {
     #[test]
     fn test_1() {
         let r = super::test_01();
-        assert_eq!(r.is_ok(), true);
+        assert!(r.is_ok());
         assert_eq!(
             r.unwrap(),
             "lines:\"85\", bytes:\"4,239\", chars:\"4,239\", words:\"274\", max:\"68\"\n"
@@ -80,7 +80,7 @@ mod test {
     #[test]
     fn test_2() {
         let r = super::test_02();
-        assert_eq!(r.is_ok(), true);
+        assert!(r.is_ok());
         assert_eq!(
             r.unwrap(),
             "lines:\"23\", bytes:\"1,290\", chars:\"1,290\", words:\"81\", max:\"67\"\n"
