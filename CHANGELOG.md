@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * `.github/workflows/test-windows.yml`
 * test status badges into `README.md`
 
+### Changed
+* rust-version = "1.60.0"
+
 ### Fixed
 * clippy: `bool\_assert\_comparison`
 
