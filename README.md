@@ -8,14 +8,13 @@
 [![Test mac][test-windows-image]][test-windows-link]
 [![Test win][test-macos-image]][test-macos-link]
 
-*aki-txpr-macro* is the more easy to use libaki-*.
+the more easy to use libaki-*.
 
 ## Features
 
 - old style rust macro
 - multi-threaded libaki-*
-- minimum support rustc 1.56.1 (59eed8a2a 2021-11-01)
-
+- minimum support rustc 1.60.0 (7737e0b5c 2022-04-04)
 
 ## Examples
 
@@ -31,7 +30,7 @@ aki-mline -e "gnu" |\
 aki-stats -a --locale "en"
 ```
 
-convert this to rust code:
+convert this to rust:
 
 ```
  let (next_in, handles) = pipe_line! {
@@ -81,6 +80,7 @@ fn test_02() -> anyhow::Result<String> {
 }
 ```
 
+
 ## libaki-*
 
 | command | description |
@@ -126,7 +126,7 @@ at your option.
 [crate-link]: https://crates.io/crates/aki-txpr-macro
 [docs-image]: https://docs.rs/aki-txpr-macro/badge.svg
 [docs-link]: https://docs.rs/aki-txpr-macro/
-[rustc-image]: https://img.shields.io/badge/rustc-1.56+-blue.svg
+[rustc-image]: https://img.shields.io/badge/rustc-1.58+-blue.svg
 [license-image]: https://img.shields.io/badge/license-Apache2.0/MIT-blue.svg
 [test-ubuntu-image]: https://github.com/aki-akaguma/aki-txpr-macro/actions/workflows/test-ubuntu.yml/badge.svg
 [test-ubuntu-link]: https://github.com/aki-akaguma/aki-txpr-macro/actions/workflows/test-ubuntu.yml

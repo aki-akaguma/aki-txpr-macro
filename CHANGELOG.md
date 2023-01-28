@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] *
 ### Added
+* `Makefile` and `README.tpl`
 * `.github/workflows/test-ubuntu.yml`
 * `.github/workflows/test-macos.yml`
 * `.github/workflows/test-windows.yml`
