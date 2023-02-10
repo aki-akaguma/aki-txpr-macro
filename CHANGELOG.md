@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 * clippy: `bool\_assert\_comparison`, `uninlined\_format\_args`
-
+* `LICENSE-APACHE`, `LICENSE-MIT`
 
 ## [0.1.5] (2023-01-11)
 ### Added
