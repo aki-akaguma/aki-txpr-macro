@@ -4,7 +4,7 @@
 //!
 //! - old style rust macro
 //! - multi-threaded libaki-*
-//! - minimum support rustc 1.60.0 (7737e0b5c 2022-04-04)
+//! - minimum support rustc 1.80.0 (051478957 2024-07-21)
 //!
 //! # Examples
 //!

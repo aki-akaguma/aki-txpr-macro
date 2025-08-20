@@ -14,7 +14,7 @@ the more easy to use libaki-*.
 
 - old style rust macro
 - multi-threaded libaki-*
-- minimum support rustc 1.60.0 (7737e0b5c 2022-04-04)
+- minimum support rustc 1.80.0 (051478957 2024-07-21)
 
 ## Examples
 
@@ -60,15 +60,15 @@ fn test_02() -> anyhow::Result<String> {
     let string = {
         let sout = runnel::medium::stringio::StringOut::default();
         #[rustfmt::skip]
-        let sioe = runnel::RunnelIoeBuilder::new().pin(next_in).pout(sout).build();
-        for line in sioe.pin().lock().lines() {
+        let sioe = runnel::RunnelIoeBuilder::new().pg_in(next_in).pg_out(sout).build();
+        for line in sioe.pg_in().lines() {
             let line_s = line?;
             let line_ss = line_s.as_str();
             #[rustfmt::skip]
-            sioe.pout().lock().write_fmt(format_args!("{}\n", line_ss))?;
+            sioe.pg_out().lock().write_fmt(format_args!("{}\n", line_ss))?;
         }
         #[rustfmt::skip]
-        let x = sioe.pout().lock().buffer_str().to_string();
+        let x = sioe.pg_out().lock().buffer_to_string();
         x
     };
     //
