@@ -8,23 +8,29 @@ categories = ["text-processing"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 edition = "2021"
-rust-version = "1.60.0"
+rust-version = "1.80.0"
 repository = "https://github.com/aki-akaguma/aki-txpr-macro"
 
 [features]
 default = []
 
 [dependencies]
-runnel = "0.3"
 anyhow = "1.0"
+runnel = "0.4"
 
 [dev-dependencies]
 aki-gsub = "0.1"
-aki-mcolor = "0.1"
+#aki-mcolor = "0.1"
 aki-mcycle = "0.1"
-aki-mline = "0.1"
+#aki-mline = "0.1"
 aki-resort = "0.1"
-aki-stats = "0.1"
+#aki-stats = "0.1"
 aki-unbody = "0.1"
-aki-xcat = "0.1"
+#aki-xcat = "0.1"
 aki-xtee = "0.1"
+
+aki-mcolor = { git = "https://github.com/aki-akaguma/aki-mcolor.git" }
+aki-mline = { git = "https://github.com/aki-akaguma/aki-mline.git" }
+aki-stats = { git = "https://github.com/aki-akaguma/aki-stats.git" }
+aki-xcat = { git = "https://github.com/aki-akaguma/aki-xcat.git" }
+

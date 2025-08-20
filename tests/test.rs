@@ -1,8 +1,6 @@
 use aki_txpr_macro::*;
 
 fn test_01() -> anyhow::Result<String> {
-    use std::io::BufRead;
-    //
     let next_in = runnel::medium::stdio::StdIn::default();
     let handles = Vec::new();
     let (next_in, handles) = pipe_line! {
@@ -14,15 +12,15 @@ fn test_01() -> anyhow::Result<String> {
     let string = {
         let sout = runnel::medium::stringio::StringOut::default();
         #[rustfmt::skip]
-        let sioe = runnel::RunnelIoeBuilder::new().pin(next_in).pout(sout).build();
-        for line in sioe.pin().lock().lines() {
+        let sioe = runnel::RunnelIoeBuilder::new().pg_in(next_in).pg_out(sout).build();
+        for line in sioe.pg_in().lines() {
             let line_s = line?;
             let line_ss = line_s.as_str();
             #[rustfmt::skip]
-            sioe.pout().lock().write_fmt(format_args!("{line_ss}\n"))?;
+            sioe.pg_out().lock().write_fmt(format_args!("{line_ss}\n"))?;
         }
         #[rustfmt::skip]
-        let x = sioe.pout().lock().buffer_str().to_string();
+        let x = sioe.pg_out().lock().buffer_to_string();
         x
     };
     //
@@ -34,8 +32,6 @@ fn test_01() -> anyhow::Result<String> {
 }
 
 fn test_02() -> anyhow::Result<String> {
-    use std::io::BufRead;
-    //
     let next_in = runnel::medium::stdio::StdIn::default();
     let handles = Vec::new();
     let (next_in, handles) = pipe_line! {
@@ -48,15 +44,15 @@ fn test_02() -> anyhow::Result<String> {
     let string = {
         let sout = runnel::medium::stringio::StringOut::default();
         #[rustfmt::skip]
-        let sioe = runnel::RunnelIoeBuilder::new().pin(next_in).pout(sout).build();
-        for line in sioe.pin().lock().lines() {
+        let sioe = runnel::RunnelIoeBuilder::new().pg_in(next_in).pg_out(sout).build();
+        for line in sioe.pg_in().lines() {
             let line_s = line?;
             let line_ss = line_s.as_str();
             #[rustfmt::skip]
-            sioe.pout().lock().write_fmt(format_args!("{line_ss}\n"))?;
+            sioe.pg_out().lock().write_fmt(format_args!("{line_ss}\n"))?;
         }
         #[rustfmt::skip]
-        let x = sioe.pout().lock().buffer_str().to_string();
+        let x = sioe.pg_out().lock().buffer_to_string();
         x
     };
     //
