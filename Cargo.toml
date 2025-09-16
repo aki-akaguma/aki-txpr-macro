@@ -1,6 +1,6 @@
 [package]
 name = "aki-txpr-macro"
-version = "0.1.5"
+version = "0.2.0"
 authors = ["aki <aki.akaguma@hotmail.com>"]
 description = "the more easy to use libaki-*."
 keywords = ["pipe", "fifo", "filter", "threads"]
@@ -19,18 +19,18 @@ anyhow = "1.0"
 runnel = "0.4"
 
 [dev-dependencies]
-aki-gsub = "0.1"
-#aki-mcolor = "0.1"
-aki-mcycle = "0.1"
-#aki-mline = "0.1"
-aki-resort = "0.1"
-#aki-stats = "0.1"
-aki-unbody = "0.1"
-#aki-xcat = "0.1"
-aki-xtee = "0.1"
+aki-gsub = "0.2"
+aki-mcolor = "0.2"
+aki-mcycle = "0.2"
+aki-mline = "0.2"
+aki-resort = "0.2"
+aki-stats = "0.2"
+aki-unbody = "0.2"
+aki-xcat = "0.2"
+aki-xtee = "0.2"
 
-aki-mcolor = { git = "https://github.com/aki-akaguma/aki-mcolor.git" }
-aki-mline = { git = "https://github.com/aki-akaguma/aki-mline.git" }
-aki-stats = { git = "https://github.com/aki-akaguma/aki-stats.git" }
-aki-xcat = { git = "https://github.com/aki-akaguma/aki-xcat.git" }
+#aki-mcolor = { git = "https://github.com/aki-akaguma/aki-mcolor.git" }
+#aki-mline = { git = "https://github.com/aki-akaguma/aki-mline.git" }
+#aki-stats = { git = "https://github.com/aki-akaguma/aki-stats.git" }
+#aki-xcat = { git = "https://github.com/aki-akaguma/aki-xcat.git" }
 
